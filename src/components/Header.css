@@ -1,0 +1,18 @@
+
+    h4 {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+        grid-gap: 20px;
+        /* color:  rgb(181, 181, 181); */
+        color:  rgb(0, 0, 0);
+    }
+    
+    h4:before,
+    h4:after {
+        content: '';
+        border-top: 2px solid;
+    }    
+
