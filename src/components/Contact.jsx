@@ -6,12 +6,12 @@ import { List, ListItem, ListItemText, ListItemAvatar, Avatar, Typography } from
 
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 // atau langsung tambahkan dengan sx={{}}
-const Contact = (data) => {
+const Contact = ({data}) => {
     // Contact berisi foto, nama, telepon, dan email
     return (
         <>
             <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                {data.contacts.map((row) => (
+                {data.map((row) => (
                     <ListItem key={row.id}>
                         <ListItemAvatar>
                         <Avatar>
