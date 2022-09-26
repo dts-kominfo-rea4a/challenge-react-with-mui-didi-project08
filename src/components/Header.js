@@ -9,7 +9,7 @@ import {} from "./Header.css";
 const Header = () => {
   return (
     <>
-      <h1>Call a Friend</h1>
+      <h1>call a friend</h1>
       <h4>Your friendly contact app</h4>
     </>
   );
