@@ -17,7 +17,7 @@ const Contact = ({ data }) => {
     card = (
       <R.Fragment>
         <CardContent>
-          <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+          <List sx={{ width: "100%", maxWidth: 360, bgcolor: "#90EE90" }}>
             {data.map((data_single) => (
               <>
                 <ListItem alignItems="flex-start">
@@ -46,26 +46,26 @@ const Contact = ({ data }) => {
   } else {
     card = (
       <R.Fragment>
-        <CardContent>
-          {/* <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}> */}
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar sx={{ width: "75px", height: "75px" }} alt="" src={data.photo} />
-            </ListItemAvatar>
-            <ListItemText
-              primary=""
-              sx={{ marginLeft: "1.5em" }}
-              secondary={
-                <R.Fragment>
-                  <p>{data.name}</p>
-                  <p>{data.phone}</p>
-                  <p>{data.email}</p>
-                </R.Fragment>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          {/* </List> */}
+        <CardContent style={{ backgroundColor: "#90EE90" }}>
+          <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar sx={{ width: "75px", height: "75px" }} alt="" src={data.photo} />
+              </ListItemAvatar>
+              <ListItemText
+                primary=""
+                sx={{ marginLeft: "1.5em" }}
+                secondary={
+                  <R.Fragment>
+                    <p>{data.name}</p>
+                    <p>{data.phone}</p>
+                    <p>{data.email}</p>
+                  </R.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
+          </List>
         </CardContent>
       </R.Fragment>
     );
@@ -73,7 +73,7 @@ const Contact = ({ data }) => {
 
   return (
     <>
-      <Card style={{ backgroundColor: "#9FE2BF" }}>{card}</Card>
+      <Card style={{ backgroundColor: "#90EE90" }}>{card}</Card>
     </>
   );
 };

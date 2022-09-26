@@ -61,23 +61,47 @@ const ContactForm = (action) => {
           <Grid container direction="column" justifyContent="space-between" alignItems="flex-start">
             <div>
               <TextField
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "100%", width: "800px" }}
                 id="name"
                 label="Name"
-                variant="outlined"
+                variant="filled"
                 value={name_input}
                 onChange={changeinputtextName}
                 required
               ></TextField>
             </div>
             <div>
-              <TextField id="phone" label="Phone" value={phone_input} onChange={changeinputtextPhone} required></TextField>
+              <TextField
+                id="phone"
+                label="Phone"
+                variant="filled"
+                style={{ width: "800px" }}
+                value={phone_input}
+                onChange={changeinputtextPhone}
+                required
+              ></TextField>
             </div>
             <div>
-              <TextField id="email" label="Email" value={email_input} onChange={changeinputtextEmail} required></TextField>
+              <TextField
+                id="email"
+                label="Email"
+                variant="filled"
+                style={{ width: "800px" }}
+                value={email_input}
+                onChange={changeinputtextEmail}
+                required
+              ></TextField>
             </div>
             <div>
-              <TextField id="photo" label="Photo URL" value={photo_input} onChange={changeinputtextPhoto} required></TextField>
+              <TextField
+                id="photo"
+                label="Photo URL"
+                variant="filled"
+                style={{ width: "800px" }}
+                value={photo_input}
+                onChange={changeinputtextPhoto}
+                required
+              ></TextField>
             </div>
           </Grid>
           <Grid container direction="row" justifyContent="flex-start" alignItems="center">
@@ -90,7 +114,9 @@ const ContactForm = (action) => {
 
   return (
     <>
-      <Card variant="outlined">{card}</Card>
+      <Card variant="outlined" style={{ backgroundColor: "#FFEFD5" }}>
+        {card}
+      </Card>
     </>
   );
 };
