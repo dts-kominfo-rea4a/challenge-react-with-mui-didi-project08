@@ -44,7 +44,7 @@ const App = () => {
               </Grid>
               <Grid item xs={6}>
                 <Item>
-                  <Contact contacts={contacts} />
+                  <Contact data={contacts} />
                 </Item>
               </Grid>
             </Grid>
