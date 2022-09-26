@@ -33,7 +33,7 @@ const Header = () => {
     <>
       <ThemeProvider theme={theme}>
         <Typography variant="h3" sx={{marginTop: '10px'}}>
-          call a friend
+          Call a Friend
         </Typography>
         <Typography variant="subtitle1" sx={{marginTop: '10px'}}>
           <Divider>your friendly contact app</Divider>
